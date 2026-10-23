@@ -1,3 +1,4 @@
+
 p, h1, h2 {
     color: white;
 }
@@ -8,20 +9,28 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;
+    margin: 0;
 }
 
-h2 {
-    margin-left: 19%;
-    margin-top: 160px;
+.uvod {
+    padding-top: 250px;
 }
 
-h1 {
+.uvod h2 {
+    color: #008CFF;
     margin-left: 19%;
-    font-size: 72px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.uvod h1 {
+    margin-left: 19%;
+    font-size: 80px;
     line-height: 0.95;
+    margin-top: 0;
 }
 
-p {
+.uvod p {
     color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -29,13 +38,16 @@ p {
     margin-left: 19%;
 }
 
-.nadpis-shop{
-    margin-left: 19%;
-    margin-top: 700px;
-    margin-bottom: 10px;
+.nadpis-shop {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    width: 72%;
+    margin: 700px auto 30px auto;
 }
 
-.podnadpis-dikografie{
+.podnadpis-diskografie {
     margin-left: 19%;
     margin-top: 0;
     margin-bottom: 10px;
@@ -53,4 +65,145 @@ td {
 
 td p {
     margin-left: 0;
+}
+
+table img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: white;
+}
+
+/* PRODUKTY V SHOP */
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    width: 72%;
+    margin: 30px auto;
+}
+
+.produkt {
+    background-color: #0e1420;
+    border: 1px solid #2a303b;
+    overflow: hidden;
+}
+
+.produkt img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.produkt-info {
+    padding: 12px;
+    text-align: left;
+}
+
+.produkt-info h3 {
+    color: white;
+    font-size: 12px;
+    margin: 0 0 5px;
+}
+
+.produkt-info p {
+    color: #aab5c5;
+    font-size: 11px;
+    margin: 0 0 12px;
+}
+
+.cena {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.cena strong {
+    color: white;
+    font-size: 14px;
+}
+
+.cena button {
+    background-color: #087cff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cena button:hover {
+    background-color: #0064d6;
+}
+
+/* DISKOGRAFIE */
+.diskografie {
+    width: 72%;
+    margin: 30px auto;
+    padding-top: 20px;
+    border-top: 1px solid #252a33;
+    font-family: Arial, sans-serif;
+}
+
+.diskografie .podnadpis-diskografie {
+    margin: 0 0 8px 0;
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.popis-diskografie {
+    color: #aab5c5;
+    font-size: 11px;
+    margin: 0 0 32px 0;
+}
+
+.alba {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.album {
+    background-color: #0e1420;
+    border: 1px solid #2a303b;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.album img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: white;
+}
+
+.album-info {
+    padding: 12px;
+    text-align: left;
+}
+
+.album-info h3 {
+    color: white;
+    font-size: 12px;
+    margin: 0 0 5px;
+}
+
+.album-info p {
+    color: #aab5c5;
+    font-size: 11px;
+    margin: 0;
+}
+
+.spotify {
+    text-align: center;
+    margin: 30px 0;
 }
