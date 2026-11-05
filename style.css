@@ -1,88 +1,113 @@
-
 p, h1, h2 {
     color: white;
 }
 
 body {
-    background-color: #050810;
+    background-color: #000000;
     background-image: url("./Fotky/ptk stage.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+.hlavni-navigace {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #050810;
+}
+
+.hlavni-navigace a {
+    color: #aab5c5;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.hlavni-navigace .logo {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.hlavni-navigace .kosik {
+    background-color: #087cff;
+    padding: 10px 18px;
+    border-radius: 25px;
+    color: white;
+}
 .uvod {
-    padding-top: 250px;
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 160px;
+    padding-bottom: 350px;
+    box-sizing: border-box;
 }
 
 .uvod h2 {
     color: #008CFF;
-    margin-left: 19%;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 0 25px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 5px;
 }
 
 .uvod h1 {
-    margin-left: 19%;
-    font-size: 80px;
-    line-height: 0.95;
-    margin-top: 0;
+    color: white;
+    margin: 0;
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 1;
 }
 
 .uvod p {
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-left: 19%;
+    color: #aab5c5;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 20px 0 0;
+    max-width: 600px;
 }
 
+.uvod-tlacitka {
+    margin-top: 35px;
+}
+
+.uvod-tlacitka a {
+    display: inline-block;
+    padding: 15px 28px;
+    margin-right: 8px;
+    border: 1px solid #252a33;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.uvod-tlacitka a:first-child {
+    background-color: #087cff;
+    border-color: #087cff;
+}
+
+.uvod-tlacitka a:hover {
+    background-color: #0064d6;
+}
 .nadpis-shop {
     color: white;
-    font-family: Arial, sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 800;
     width: 72%;
-    margin: 700px auto 30px auto;
+    margin: 0 auto 20px;
 }
 
-.podnadpis-diskografie {
-    margin-left: 19%;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-
-td {
-    text-align: center;
-}
-
-td p {
-    margin-left: 0;
-}
-
-table img {
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    color: white;
-}
-
-/* PRODUKTY V SHOP */
 .shop {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 12px;
     width: 72%;
-    margin: 30px auto;
+    margin: 0 auto 30px;
 }
 
 .produkt {
@@ -97,11 +122,11 @@ a {
     height: 280px;
     object-fit: contain;
     background-color: white;
+    
 }
 
 .produkt-info {
     padding: 12px;
-    text-align: left;
 }
 
 .produkt-info h3 {
@@ -143,17 +168,15 @@ a {
     background-color: #0064d6;
 }
 
-/* DISKOGRAFIE */
 .diskografie {
     width: 72%;
     margin: 30px auto;
     padding-top: 20px;
     border-top: 1px solid #252a33;
-    font-family: Arial, sans-serif;
 }
 
 .diskografie .podnadpis-diskografie {
-    margin: 0 0 8px 0;
+    margin: 0 0 8px;
     color: white;
     font-size: 28px;
     font-weight: 800;
@@ -162,7 +185,7 @@ a {
 .popis-diskografie {
     color: #aab5c5;
     font-size: 11px;
-    margin: 0 0 32px 0;
+    margin: 0 0 32px;
 }
 
 .alba {
@@ -188,7 +211,6 @@ a {
 
 .album-info {
     padding: 12px;
-    text-align: left;
 }
 
 .album-info h3 {
@@ -203,7 +225,45 @@ a {
     margin: 0;
 }
 
+.info {
+    width: 72%;
+    margin: 30px auto 60px;
+}
+
+.info h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 24px;
+}
+
+.info-odkazy {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.info-odkazy a {
+    display: block;
+    background-color: #0e1420;
+    border: 1px solid #2a303b;
+    border-radius: 4px;
+    padding: 22px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.info-odkazy a:hover {
+    border-color: #087cff;
+}
+
 .spotify {
     text-align: center;
     margin: 30px 0;
+}
+
+a {
+    color: white;
 }
