@@ -1,3 +1,4 @@
+
 p, h1, h2 {
     color: white;
 }
@@ -126,7 +127,6 @@ body {
     height: 280px;
     object-fit: contain;
     background-color: white;
-    
 }
 
 .produkt-info {
@@ -266,7 +266,6 @@ body {
 }
 
 /* KONTAKTY */
-
 .kontakty {
     width: 72%;
     margin: 30px auto 60px;
@@ -322,4 +321,74 @@ body {
 
 a {
     color: white;
+}
+
+
+/* LOGIN A SIGN UP */
+
+.navigace-vpravo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hlavni-navigace .login {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hlavni-navigace .login:hover {
+    color: #087cff;
+}
+
+.login-okno {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #0e1420;
+    border: 1px solid #2a303b;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-okno h2 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.login-okno input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    margin: 15px 0;
+    background-color: #050810;
+    border: 1px solid #2a303b;
+    color: white;
+}
+
+.login-okno button {
+    width: 100%;
+    padding: 13px;
+    background-color: #087cff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-okno button:hover {
+    background-color: #0064d6;
+}
+
+.login-okno p {
+    color: #aab5c5;
+}
+
+.login-okno a {
+    color: #087cff;
+    text-decoration: none;
 }
